@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;         /* Makes sure the body takes up full viewport height */
+    margin: 0;                 /* Removes default margin */
+    
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 600px;
+    width: 400px;
+    background-color: rgb(99, 86, 86);
+    border: rgb(207, 153, 81) 8px solid;
+    border-radius: 4px;
+    
+}
+
+
+.display {
+    display: flex;
+    align-self: center;
+    width: 400px;
+    
+    background-color: tomato;
+    width: 400px;
+    height: 125px;
+    border: solid 6px black;
+    box-sizing: border-box;
+
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.button {
+    height: calc(475px / 4);
+    width: calc(400px / 4);
+    border-radius: 8px;
+    background-color:rgb(68, 45, 23);
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: white;
+
+}
+
+/* Style operator buttons */
+[data-value="+"],
+[data-value="-"],
+[data-value="*"],
+[data-value="/"] {
+    background-color: rgb(129, 87, 23);
+}
+
+[data-value="C"] {
+    background-color: rgb(80, 23, 23);
+}
+
+[data-value="="] {
+    background-color: rgb(67, 73, 13);
+}
