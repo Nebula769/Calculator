@@ -50,6 +50,17 @@ body {
 
 }
 
+.display-input {
+    display: flex;
+    flex: auto;
+    background-color: bisque; 
+    justify-content: flex-end;
+    font-size: x-large;
+
+    
+    
+}
+
 /* Style operator buttons */
 [data-value="+"],
 [data-value="-"],
