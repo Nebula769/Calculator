@@ -7,6 +7,10 @@ body {
     
 }
 
+input {
+    text-align: right;
+}
+
 .calculator {
     display: flex;
     flex-direction: column;
@@ -18,7 +22,6 @@ body {
     border-radius: 4px;
     
 }
-
 
 .display {
     display: flex;
@@ -55,10 +58,20 @@ body {
     flex: auto;
     background-color: bisque; 
     justify-content: flex-end;
-    font-size: x-large;
+    font-size: 46px;;
+    max-width: 380px;
 
-    
-    
+}
+
+.display-input::placeholder {
+    font-size: 30px; /* Set the desired font size */
+    color: rgb(32, 19, 19);     /* Optional: Set the color of the placeholder text */
+}
+
+.display-input::-webkit-inner-spin-button,
+.display-input::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari, Edge */
+    margin: 0; /* Remove margin, if any */
 }
 
 /* Style operator buttons */
