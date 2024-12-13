@@ -71,15 +71,15 @@ function evaluate() {
     const inputField = document.querySelector('.display-input');
     switch (curOperator) {
         case '+':
-            inputField.value = add(parseFloat(num1), parseFloat(curNum));
+            inputField.value = add(parseFloat(num1), parseFloat(curNum)).toPrecision(4);
             break;
         
         case '-':
-            inputField.value = subtract(parseFloat(num1), parseFloat(curNum));
+            inputField.value = subtract(parseFloat(num1), parseFloat(curNum)).toPrecision(4);
             break;
 
         case '*':
-            inputField.value = multiply(parseFloat(num1), parseFloat(curNum));
+            inputField.value = multiply(parseFloat(num1), parseFloat(curNum)).toPrecision(4);
             break;
 
         case '/':
@@ -89,7 +89,7 @@ function evaluate() {
                 inputField.placeholder.
                 break;
             }
-            inputField.value = divide(parseFloat(num1), parseFloat(curNum));
+            inputField.value = divide(parseFloat(num1), parseFloat(curNum)).toPrecision(4);
             break;
     }
 
